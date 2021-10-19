@@ -1,0 +1,5 @@
+/* *, es un selector que aplica a todo, en este caso a todo lo que este dentro del body */
+* {
+    margin: 0;
+    padding: 0;
+}

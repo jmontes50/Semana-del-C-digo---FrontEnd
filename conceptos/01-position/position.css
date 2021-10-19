@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.papa {
+    width: 500px;
+    height: 1200px;
+    border: 2px solid blue;
+}
+
+.hijo {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+}

@@ -1,5 +1,37 @@
+/* Variables */
+/* :root, me indica que van a funcionar como un grupo de reglas */
+:root {
+    /* --nombrevariable:valor */
+    --color1: #18db70;
+    --color2: #9e3bdb;
+}
+
 /* *, es un selector que aplica a todo, en este caso a todo lo que este dentro del body */
 * {
     margin: 0;
     padding: 0;
+    /* arreglo temporal */
+    /* border:grosor tipo color */
+    border: 1px solid red;
+    /* indica que el tamaño que nosotros indicamos ya sea para ancho o altura considere contenido + padding + borde */
+    box-sizing: border-box;
+    /* cambiar la fuente de todo */
+    /* en caso Open sans no se encuentre, cargará sans-serif */
+    font-family: "Open Sans", sans-serif;
 }
+
+header {
+    color: white;
+}
+
+.gradiente {
+    /* linear-gradient(angulo, color1, color2) */
+    background-image: linear-gradient(45deg, var(--color1), var(--color2));
+}
+
+.img_apps {
+    width: 300px;
+    padding: 10px;
+}
+
+/* NUNCA UTILICEN INLINE, INLINE-BLOCK */

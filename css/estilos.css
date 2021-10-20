@@ -157,3 +157,8 @@ h5 {
 }
 
 /* -------------media queries----------------- */
+@media screen and (max-width: 800px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+}

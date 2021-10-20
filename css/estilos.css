@@ -156,6 +156,23 @@ h5 {
     color: white;
 }
 
+/* FUNCIONALIDADES */
+
+.funcionalidades {
+    display: flex;
+}
+
+/* , funciona como y */
+.func_descripcion,
+.func_imagen {
+    padding: 20px;
+    max-width: 50%;
+}
+
+.func_imagen img {
+    max-width: 100%;
+}
+
 /* -------------media queries----------------- */
 @media screen and (max-width: 800px) {
     .tarjetas {

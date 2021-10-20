@@ -139,3 +139,21 @@ h5 {
 .tarjeta * {
     margin: 5px 0;
 }
+
+.tarjeta img {
+    width: 60px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    /* line-height - indica el espaciado entre lineas de texto */
+    line-height: 32px;
+}
+
+/* pseudoclase */
+/* nth-of-type(numero) */
+.tarjeta:nth-of-type(2) {
+    color: white;
+}
+
+/* -------------media queries----------------- */

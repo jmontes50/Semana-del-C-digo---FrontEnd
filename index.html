@@ -1,81 +1,99 @@
 <!-- Va a indicar la V. de HTML en este caso la 5 -->
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<!-- información técnica, navegador, buscadores -->
-		<!-- Disclaimer, solo voy a hacer las partes estrictamente más importantes -->
-		<meta charset="UTF-8">
-		<title>CodiMusic</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-		<!-- font-awesome -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<!-- agregamos nuestro css -->
-		<link rel="stylesheet" href="css/estilos.css">
-	</head>
-	<body>
-		<!-- class ? -->
-		<!-- nos va a servir más adelante para identificar etiquetas ó grupos de etiquetas-->
-		<header class="gradiente">
-			<nav class="navegacion contenedor">
-				<h2 class="logo">
-					<i class="fas fa-headphones-alt"></i>CodiMusic
-				</h2>
-				<!-- unordered list, lista desordenada -->
-				<ul class="links">
-					<li>Inicio</li>
-					<li>Explora</li>
-					<li>
-						<button 
-							class="btn-white"
-						>
-							Regístrate
-						</button>	
-					</li>
-				</ul>
-			</nav>
-			<!-- hero -->
-			<section class="hero">
-				<!-- h1 ... h6 -->
-				<h1>Codimusic: Escucha música desde cualquier lugar</h1>
-				<h5>
-					Prueba nuestra aplicación web!
-				</h5>
-				<div>
-					<button class="btn-white">
-						Get Started
-					</button>
-					<button class="btn-white">
-						Prueba Gratis
-					</button>
-				</div>
-				<img	
-					src="assets/img/visual_desktop.png"
-					alt="imagen apps"
-					class="img_apps"
-				>
-			</section>
-		</header>
+    <head>
+        <!-- información técnica, navegador, buscadores -->
+        <!-- Disclaimer, solo voy a hacer las partes estrictamente más importantes -->
+        <meta charset="UTF-8" />
+        <title>CodiMusic</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- font-awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- agregamos nuestro css -->
+        <link rel="stylesheet" href="css/estilos.css" />
+    </head>
+    <body>
+        <!-- class ? -->
+        <!-- nos va a servir más adelante para identificar etiquetas ó grupos de etiquetas-->
+        <header class="gradiente">
+            <nav class="navegacion contenedor">
+                <h2 class="logo"><i class="fas fa-headphones-alt"></i>CodiMusic</h2>
+                <!-- unordered list, lista desordenada -->
+                <ul class="links">
+                    <li>Inicio</li>
+                    <li>Explora</li>
+                    <li>
+                        <button class="btn-white">Regístrate</button>
+                    </li>
+                </ul>
+            </nav>
+            <!-- hero -->
+            <section class="hero">
+                <!-- h1 ... h6 -->
+                <h1>Codimusic: Escucha música desde cualquier lugar</h1>
+                <h5>Prueba nuestra aplicación web!</h5>
+                <div>
+                    <button class="btn-white">Get Started</button>
+                    <button class="btn-white">Prueba Gratis</button>
+                </div>
+                <img src="assets/img/visual_desktop.png" alt="imagen apps" class="img_apps" />
+            </section>
+        </header>
 
-		<!-- main - principal -->
-		<main>
-			<div class="contenedor">
-				<!-- caracteristicas -->
-				<section class="caracteristicas">
-					<h2>CodiMusic ha sido construido especialmente para tí</h2>
-					<div class="tarjetas">
-						<div class="tarjeta">
-							<img src="assets/img/idea.png" alt="icon_idea">
-							<h4>Descubre</h4>
-							<p>
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa error beatae perspiciatis expedita tempora labore corporis voluptatem molestias quod. Dolore dolorum quaerat deleniti perspiciatis placeat voluptates? Architecto accusamus quam nostrum.
-							</p>
-							<a href="#">Conocer más</a>
-						</div>
-					</div>
-				</section>
-			</div>
-		</main>
-	</body>
+        <!-- main - principal -->
+        <main>
+            <div class="contenedor">
+                <!-- caracteristicas -->
+                <section class="caracteristicas">
+                    <h2>CodiMusic ha sido construido especialmente para tí</h2>
+                    <div class="tarjetas">
+                        <!-- tarjeta -->
+                        <div class="tarjeta">
+                            <img src="assets/img/idea.png" alt="icon_idea" />
+                            <h4>Descubre</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa error beatae
+                                perspiciatis expedita tempora labore corporis voluptatem molestias quod. Dolore dolorum
+                                quaerat deleniti perspiciatis placeat voluptates? Architecto accusamus quam nostrum.
+                            </p>
+                            <a href="#">Conocer más</a>
+                        </div>
+                        <!-- tarjeta -->
+                        <div class="tarjeta gradiente">
+                            <img src="assets/img/atom.png" alt="icon_idea" />
+                            <h4>Descubre</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa error beatae
+                                perspiciatis expedita tempora labore corporis voluptatem molestias quod. Dolore dolorum
+                                quaerat deleniti perspiciatis placeat voluptates? Architecto accusamus quam nostrum.
+                            </p>
+                            <a href="#">Conocer más</a>
+                        </div>
+                        <!-- tarjeta -->
+                        <div class="tarjeta">
+                            <img src="assets/img/iconscreen.png" alt="icon_idea" />
+                            <h4>Descubre</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa error beatae
+                                perspiciatis expedita tempora labore corporis voluptatem molestias quod. Dolore dolorum
+                                quaerat deleniti perspiciatis placeat voluptates? Architecto accusamus quam nostrum.
+                            </p>
+                            <a href="#">Conocer más</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
 </html>

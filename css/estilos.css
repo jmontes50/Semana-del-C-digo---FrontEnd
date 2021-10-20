@@ -20,6 +20,8 @@
     font-family: "Open Sans", sans-serif;
 }
 
+/* clases reutilizables o generales */
+
 header {
     color: white;
 }
@@ -29,9 +31,37 @@ header {
     background-image: linear-gradient(45deg, var(--color1), var(--color2));
 }
 
+.contenedor {
+    max-width: 1000px;
+    /* centrar horizontalmente este contenedor */
+    /* margin: arribayabajo costados */
+    margin: 0 auto;
+}
+
 .img_apps {
     width: 300px;
     padding: 10px;
 }
 
 /* NUNCA UTILICEN INLINE, INLINE-BLOCK */
+
+/* NAVEGACIÓN */
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* todos los elementos ul dentro de .navegacion */
+/* .navegacion ul */
+.links {
+    display: flex;
+    /* flex-direction:row, por default */
+    /* list-style-type, indica el tipo de viñeta, es removerla al ponerle none */
+    list-style-type: none;
+    align-items: center;
+}
+
+.links li {
+    margin: 0 10px;
+}

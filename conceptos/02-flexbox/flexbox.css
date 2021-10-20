@@ -5,10 +5,18 @@
     border: 1px solid red;
 }
 
+/* elemento padre */
 .menu {
     height: 400px;
     background-color: coral;
     display: flex;
+    /* flex-direction:row - axis*/
+    flex-direction: row;
+    /* justify-content alinea los elementos de forma horizontal */
+    /* center, space-around, space-between, space-evenly*/
+    justify-content: space-evenly;
+    /* alinear elementos de forma vertical */
+    align-items: center;
 }
 
 .link {

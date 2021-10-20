@@ -24,6 +24,8 @@
 
 header {
     color: white;
+    position: relative;
+    min-height: 850px; /*img tendrá un absolute*/
 }
 
 button {
@@ -31,6 +33,12 @@ button {
     border-radius: 20px;
     max-height: 40px;
     padding: 10px 20px;
+}
+
+h2 {
+    font-weight: 400;
+    margin: 40px 0;
+    font-size: 32px;
 }
 
 .btn-white {
@@ -60,8 +68,8 @@ button {
 }
 
 .img_apps {
-    width: 300px;
-    padding: 10px;
+    position: absolute;
+    bottom: 0;
 }
 
 /* NUNCA UTILICEN INLINE, INLINE-BLOCK */
@@ -99,4 +107,11 @@ button {
 .hero h1,
 h5 {
     margin: 10px;
+}
+
+.hero h1 {
+    /* text-align me permite indicar la alineación del texto */
+    text-align: center;
+    font-weight: 700;
+    font-size: 54px;
 }

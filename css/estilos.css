@@ -28,6 +28,10 @@ header {
     min-height: 850px; /*img tendrá un absolute*/
 }
 
+section {
+    padding: 30px 0;
+}
+
 button {
     /*forma*/
     border-radius: 20px;

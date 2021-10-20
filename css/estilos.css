@@ -115,3 +115,27 @@ h5 {
     font-weight: 700;
     font-size: 54px;
 }
+
+/* CARACTERISTICAS */
+
+.caracteristicas h2 {
+    /* Texto */
+    text-align: center;
+}
+
+.tarjetas {
+    display: flex;
+}
+
+.tarjeta {
+    margin: 10px;
+    padding: 40px 50px;
+    border-radius: 10px;
+    /* box-shadow: despX despY difuminado color */
+    box-shadow: 0 0 20px gray;
+}
+
+/* todos los elementos que esten dentro de .tarjeta */
+.tarjeta * {
+    margin: 5px 0;
+}

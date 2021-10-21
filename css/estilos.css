@@ -12,7 +12,7 @@
     padding: 0;
     /* arreglo temporal */
     /* border:grosor tipo color */
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     /* indica que el tamaño que nosotros indicamos ya sea para ancho o altura considere contenido + padding + borde */
     box-sizing: border-box;
     /* cambiar la fuente de todo */

@@ -189,6 +189,16 @@ h5 {
     max-width: 100%;
 }
 
+/* REGISTRARSE */
+.registrate {
+    /* .. salir de la carpeta */
+    background-image: url("../assets/img/background2.webp");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px;
+}
+
 /* -------------media queries----------------- */
 @media screen and (max-width: 800px) {
     .tarjetas {

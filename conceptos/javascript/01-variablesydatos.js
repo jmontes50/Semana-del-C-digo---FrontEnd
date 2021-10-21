@@ -50,3 +50,15 @@ console.log("División", Division);
 
 let residuo = 105 % 4;
 console.log("Residuo", residuo);
+
+console.log("----Concatenación de Texto----");
+
+// Template String - Template Literal
+let perro = "Backus";
+let edadPerro = 13;
+
+// backtick
+// ${variable} , puedo llamar al valor de esa variable
+let oracion = `Mi perro se llama ${perro} y tiene de edad ${edadPerro} años`;
+
+console.log(oracion);

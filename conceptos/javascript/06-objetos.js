@@ -4,6 +4,7 @@ let mascota = {
     edad: 13,
     hobbies: ["Jugar", "Dormir", "Perseguir gatos"],
     comer: function () {
+        //métodos
         console.log("ñam ñam ñam");
     },
 };

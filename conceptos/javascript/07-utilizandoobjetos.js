@@ -341,5 +341,7 @@ let peliculas = [
 ];
 
 for (let i = 0; i < peliculas.length; i++) {
-    console.log(`${peliculas[i].original_title} se estrenó el ${peliculas[i].release_date}`);
+    if (peliculas[i].vote_average >= 7) {
+        console.log(`${peliculas[i].original_title} se estrenó el ${peliculas[i].release_date}`);
+    }
 }

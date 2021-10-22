@@ -31,6 +31,16 @@ let productos = [
     },
 ];
 
+function calcularGastosFabricacion(clave, costoMP) {
+    if (clave === 2 || clave === 5) {
+        return costoMP * 0.3;
+    } else if (clave === 3 || clave === 6) {
+        return costoMP * 0.35;
+    } else {
+        return costoMP * 0.28;
+    }
+}
+
 function calcularManoObra(clave, costoMP) {
     if (clave === 3 || clave === 4) {
         return costoMP * 0.75; //se termina la función
@@ -49,5 +59,11 @@ function calcularCostos(listaProductos) {
         let costoMP = listaProductos[i].materiaPrima;
         let clave = listaProductos[i].clave;
         let costoMO = calcularManoObra(clave, costoMP);
+        let costoGF = calcularGastosFabricacion(clave, costoMP);
+        costoProd = costoMP + costoMO + costoGF;
     }
+    let precioTotal = costoProd * 1.45;
+    console.log(`El precio de venta total es ${precioTotal}`);
 }
+
+calcularCostos(productos);

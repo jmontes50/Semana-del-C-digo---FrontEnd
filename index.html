@@ -45,7 +45,7 @@
                 <h5>Prueba nuestra aplicación web!</h5>
                 <div>
                     <button class="btn-white">Get Started</button>
-                    <button class="btn-white">Prueba Gratis</button>
+                    <button class="btn-white" id="btnPrueba">Prueba Gratis</button>
                 </div>
                 <img src="assets/img/visual_desktop.png" alt="imagen apps" class="img_apps" />
             </section>
@@ -128,5 +128,23 @@
                 </div>
             </section>
         </main>
+
+		<!-- Estructura del Modal -->
+		<!-- modal - parte gris -->
+		<div id="miModal" class="modal">
+			<!-- modal-content - contenido del modal -->
+			<span class="cerrar">X</span>
+			<div class="busqueda">
+				<input type="text" id="inputBusqueda" placeholder="Ej. X DINERO">
+				<button class="btn_verde" id="btnBusqueda">Buscar</button>
+			</div>
+			<!-- canciones - van a aparecer las canciones despues -->
+			<div class="canciones" id="divCanciones">
+				
+			</div>
+		</div>
+
+		<!-- javascript -->
+		<script src="js/app.js"></script>
     </body>
 </html>

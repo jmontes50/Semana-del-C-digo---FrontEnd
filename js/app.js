@@ -6,14 +6,25 @@ let cerrar = document.getElementById("btnCerrar");
 
 let divCanciones = document.getElementById("divCanciones");
 
+let btnBusqueda = document.getElementById("btnBusqueda");
+
+let inputBusqueda = document.getElementById("inputBusqueda");
+
+btnBusqueda.addEventListener("click", function () {
+    buscarDeezer(inputBusqueda.value);
+});
+
 btnPrueba.addEventListener("click", function () {
-    buscarDeezer("x dinero");
     // elementosHTML tiene una propiedad .style
     modal.style.display = "block";
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100%";
 });
 
 btnCerrar.addEventListener("click", function () {
     modal.style.display = "none";
+    document.body.style.overflow = "auto";
+    document.body.style.height = "auto";
 });
 
 async function buscarDeezer(busqueda) {
@@ -31,7 +42,8 @@ async function buscarDeezer(busqueda) {
         //fetch(url, configuracion)
         let rpta = await fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${busqueda}`, configuracion);
         const datos = await rpta.json(); //convierte de TEXTO(json) a un Objeto de JS
-        console.log(datos.data);
+        // console.log(datos.data);
+        dibujarCanciones(datos.data);
     } catch (error) {
         console.log(error);
     }
@@ -62,4 +74,5 @@ function dibujarCanciones(arregloCanciones) {
 				</div>
 			</div>`;
     });
+    divCanciones.innerHTML = htmlCanciones;
 }

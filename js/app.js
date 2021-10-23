@@ -16,6 +16,10 @@ async function buscarDeezer(busqueda) {
 
     try {
         //fetch(url, configuracion)
-        let rpta = await fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${busqueda}`);
-    } catch (error) {}
+        let rpta = await fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${busqueda}`, configuracion);
+        const datos = await rpta.json(); //convierte de TEXTO(json) a un Objeto de JS
+        console.log(datos);
+    } catch (error) {
+        console.log(error);
+    }
 }
